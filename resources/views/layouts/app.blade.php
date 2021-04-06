@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-
+{{-- 
         @guest
             @if (Route::has('login'))
                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a> 
@@ -42,7 +42,7 @@
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                 @csrf
             </form>
-        @endguest
+        @endguest --}}
 
         <main class="py-4">
             @yield('content')
